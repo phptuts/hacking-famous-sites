@@ -1,0 +1,10 @@
+site_name: Hacking Websites
+nav:
+  - Home: index.md
+  - Hacking Google: google.md
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages: ["svelte", "javascript", "html", "css", "typescript"]
+extra_css:
+  - css/style.css
