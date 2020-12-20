@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Hacking Google - Hacking Websites</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/style.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Hacking Google";
+    var mkdocs_page_input_path = "google.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/html.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Hacking Websites</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Hacking Google</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#changing-the-background">Changing the background</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changing-to-a-custom-color">Changing to a custom color</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#background-image">Background Image</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#background-image-size">Background Image Size</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#background-image-no-repeat">Background Image No Repeat</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#backgroud-image-cover">Backgroud Image Cover</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multiple-background-images">Multiple Background Images</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#blend-image-with-color">Blend Image with Color</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#blend-image-with-another-image">Blend Image with Another Image</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#making-the-page-the-rotate">Making the page the rotate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#making-the-page-rotate-along-an-axis">Making the page rotate along an axis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#making-scalling-a-web-page">Making Scalling a web page</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-clip-path">Using Clip Path</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#circle">Circle</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ellipse">Ellipse</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mouse-cursors">Mouse Cursors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mouse-cursor-image">Mouse Cursor Image</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#blend-mode">Blend Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#html">HTML</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#image">Image</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Hacking Websites</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Hacking Google</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hacking-google">Hacking Google</h1>
+<h2 id="changing-the-background">Changing the background</h2>
+<pre><code class="language-css">background-color: blue;
+</code></pre>
+<h2 id="changing-to-a-custom-color">Changing to a custom color</h2>
+<pre><code class="language-css">background-color: rgb(230, 0, 230);
+</code></pre>
+<h2 id="background-image">Background Image</h2>
+<pre><code class="language-css">background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+</code></pre>
+<h2 id="background-image-size">Background Image Size</h2>
+<pre><code class="language-css">background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-size: 100px;
+</code></pre>
+<h2 id="background-image-no-repeat">Background Image No Repeat</h2>
+<pre><code class="language-css">background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-repeat: no-repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+</code></pre>
+<h2 id="backgroud-image-cover">Backgroud Image Cover</h2>
+<pre><code class="language-css">background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-size: cover;
+</code></pre>
+<h2 id="multiple-background-images">Multiple Background Images</h2>
+<pre><code class="language-css">background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278),
+  url(https://the-public-domain-review.imgix.net/blog/2020/zoom-backgrounds/zoom-batch-1-banner.jpg?fit=max&amp;w=1200&amp;h=850);
+background-size: 100px 100px;
+background-repeat: repeat-x, repeat;
+background-repeat: repeat-y, repeat-x;
+</code></pre>
+<h2 id="blend-image-with-color">Blend Image with Color</h2>
+<pre><code class="language-css">background-color: #3ab1cc;
+background-blend-mode: luminosity;
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-size: cover;
+</code></pre>
+<h2 id="blend-image-with-another-image">Blend Image with Another Image</h2>
+<pre><code class="language-css">background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278),
+  url(https://the-public-domain-review.imgix.net/blog/2020/zoom-backgrounds/zoom-batch-1-banner.jpg?fit=max&amp;w=1200&amp;h=850);
+background-blend-mode: exclusion;
+background-size: cover;
+</code></pre>
+<h2 id="making-the-page-the-rotate">Making the page the rotate</h2>
+<pre><code class="language-css">transform: rotate(72deg);
+</code></pre>
+<h2 id="making-the-page-rotate-along-an-axis">Making the page rotate along an axis</h2>
+<pre><code class="language-css">transform: rotateX(0deg);
+transform: rotateY(0deg);
+transform: rotateZ(0deg);
+</code></pre>
+<h2 id="making-scalling-a-web-page">Making Scalling a web page</h2>
+<pre><code class="language-css">transform: scale(1.5);
+</code></pre>
+<h2 id="using-clip-path">Using Clip Path</h2>
+<h3 id="circle">Circle</h3>
+<pre><code class="language-css">clip-path: circle(81px);
+</code></pre>
+<h3 id="ellipse">Ellipse</h3>
+<pre><code class="language-css">clip-path: ellipse(234px 64px at 44% 27%);
+</code></pre>
+<h3 id="mouse-cursors">Mouse Cursors</h3>
+<pre><code class="language-css">cursor: nesw-resize;
+</code></pre>
+<h3 id="mouse-cursor-image">Mouse Cursor Image</h3>
+<pre><code class="language-css">cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png),
+  pointer;
+</code></pre>
+<h2 id="blend-mode">Blend Mode</h2>
+<h3 id="html">HTML</h3>
+<pre><code class="language-css">background-color: #ffae78;
+</code></pre>
+<h3 id="image">Image</h3>
+<pre><code class="language-css">mix-blend-mode: screen;
+</code></pre>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.w3schools.com/cssref/css3_pr_background.asp">Background Css</a></li>
+<li><a href="https://www.w3schools.com/css/css3_2dtransforms.asp">Transform 2D</a></li>
+<li><a href="https://www.w3schools.com/css/css3_3dtransforms.asp">Transform 3D</a></li>
+<li><a href="https://www.w3schools.com/cssref/pr_class_cursor.asp">Mouse Curosors</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">Clip Path</a></li>
+<li><a href="https://stackoverflow.com/questions/18551277/using-external-images-for-css-custom-cursors">Image Cursors</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
