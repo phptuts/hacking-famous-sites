@@ -5,6 +5,6 @@ nav:
 theme:
   name: readthedocs
   highlightjs: true
-  hljs_languages: ["svelte", "javascript", "html", "css", "typescript"]
+  hljs_languages: ["css", "javascript", "html"]
 extra_css:
   - css/style.css

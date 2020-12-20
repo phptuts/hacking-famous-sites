@@ -1,39 +1,140 @@
 # Hacking Google
 
-## Opening Chrome Developer Tools
-
-![Open Google Developer Tools](/images/google/opening-google.gif)
-
-1\. Go to [google.com](https://google.com)
-
-2\. Right click on the page.
-
-3\. Scroll Up
-
 ## Changing the background
 
-![Changing Background](/images/google/changing-background.gif)
-
-1\. Scroll to the top and select the body.
-
-2\. Click on the element.style
-
-3\. Type in the background-color
-
-4\. Then type in tab
-
-5\. Select a color
+```css
+background-color: blue;
+```
 
 ## Changing to a custom color
 
-![Changing Background](/images/google/changing-custom-background.gif)
+```css
+background-color: rgb(230, 0, 230);
+```
 
-1\. Google rgb color picker
+## Background Image
 
-2\. Select a color
+```css
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+```
 
-3\. Copy the rgb color values
+## Background Image Size
 
-4\. Go back to the extension and type in background-color
+```css
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-size: 100px;
+```
 
-5\. Hit tab and the type in rgb(COPY_YOUR_COLOR_FROM PICKER)
+## Background Image No Repeat
+
+```css
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-repeat: no-repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+```
+
+## Backgroud Image Cover
+
+```css
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-size: cover;
+```
+
+## Multiple Background Images
+
+```css
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278),
+  url(https://the-public-domain-review.imgix.net/blog/2020/zoom-backgrounds/zoom-batch-1-banner.jpg?fit=max&w=1200&h=850);
+background-size: 100px 100px;
+background-repeat: repeat-x, repeat;
+background-repeat: repeat-y, repeat-x;
+```
+
+## Blend Image with Color
+
+```css
+background-color: #3ab1cc;
+background-blend-mode: luminosity;
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278);
+background-size: cover;
+```
+
+## Blend Image with Another Image
+
+```css
+background-image: url(https://www.goodfreephotos.com/cache/other-photos/backgrounds/blue-watercolor-background_800.jpg?cached=1522546278),
+  url(https://the-public-domain-review.imgix.net/blog/2020/zoom-backgrounds/zoom-batch-1-banner.jpg?fit=max&w=1200&h=850);
+background-blend-mode: exclusion;
+background-size: cover;
+```
+
+## Making the page the rotate
+
+```css
+transform: rotate(72deg);
+```
+
+## Making the page rotate along an axis
+
+```css
+transform: rotateX(0deg);
+transform: rotateY(0deg);
+transform: rotateZ(0deg);
+```
+
+## Making Scalling a web page
+
+```css
+transform: scale(1.5);
+```
+
+## Using Clip Path
+
+### Circle
+
+```css
+clip-path: circle(81px);
+```
+
+### Ellipse
+
+```css
+clip-path: ellipse(234px 64px at 44% 27%);
+```
+
+### Mouse Cursors
+
+```css
+cursor: nesw-resize;
+```
+
+### Mouse Cursor Image
+
+```css
+cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png),
+  pointer;
+```
+
+## Blend Mode
+
+### HTML
+
+```css
+background-color: #ffae78;
+```
+
+### Image
+
+```css
+mix-blend-mode: screen;
+```
+
+## Resources
+
+- [Background Css](https://www.w3schools.com/cssref/css3_pr_background.asp)
+- [Transform 2D](https://www.w3schools.com/css/css3_2dtransforms.asp)
+- [Transform 3D](https://www.w3schools.com/css/css3_3dtransforms.asp)
+- [Mouse Curosors](https://www.w3schools.com/cssref/pr_class_cursor.asp)
+- [Clip Path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
+- [Image Cursors](https://stackoverflow.com/questions/18551277/using-external-images-for-css-custom-cursors)
