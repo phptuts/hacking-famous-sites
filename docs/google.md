@@ -1,6 +1,10 @@
 # Hacking Google
 
-To get start with the hacking / google developer tools go [tools](google.md).
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-ja7RUfX9Us" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+To get start with the hacking / google developer tools go [home page](google.md).
+
+
 
 ## Changing the background
 
