@@ -111,13 +111,13 @@ clip-path: circle(81px);
 clip-path: ellipse(234px 64px at 44% 27%);
 ```
 
-### Mouse Cursors
+## Mouse Cursors
 
 ```css
 cursor: nesw-resize;
 ```
 
-### Mouse Cursor Image
+## Mouse Cursor Image
 
 ```css
 cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png),
