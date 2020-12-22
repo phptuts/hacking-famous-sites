@@ -1,5 +1,7 @@
 # Hacking Google
 
+To get start with the hacking / google developer tools go [tools](google.md).
+
 ## Changing the background
 
 ```css
@@ -89,6 +91,12 @@ transform: rotateZ(0deg);
 transform: scale(1.5);
 ```
 
+## Skewing the webpage
+
+```css
+transform: skewX(100deg);
+```
+
 ## Using Clip Path
 
 ### Circle
@@ -114,20 +122,6 @@ cursor: nesw-resize;
 ```css
 cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png),
   pointer;
-```
-
-## Blend Mode
-
-### HTML
-
-```css
-background-color: #ffae78;
-```
-
-### Image
-
-```css
-mix-blend-mode: screen;
 ```
 
 ## Resources

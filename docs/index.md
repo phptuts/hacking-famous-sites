@@ -12,7 +12,7 @@ We are not going to do any actual hacking because we don't want to go to jail.
 
 ## Opening Chrome Developer Tools
 
-![Open Google Developer Tools](/images/google/opening-google.gif)
+![Open Google Developer Tools](images/google/opening-google.gif)
 
 1\. Go to [google.com](https://google.com)
 
